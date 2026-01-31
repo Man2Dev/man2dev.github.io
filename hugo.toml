@@ -1,0 +1,120 @@
+baseURL = "https://hendiani.me/"
+title = "Mohammadreza Hendiani"
+theme = "PaperMod"
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+buildDrafts = false
+
+[params]
+  author = "Mohammadreza Hendiani"
+  defaultTheme = "auto"
+  showReadingTime = true
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    title = "Mohammadreza Hendiani"
+    
+    [languages.en.params]
+      description = "Computer Science Master's Student | AI/ML & Open Source Developer"
+      
+      [languages.en.params.homeInfoParams]
+        Title = "Hi, I'm Mohammadreza 👋"
+        Content = """
+Computer Science Master's student focused on **Big Data & AI** at SRH University Leipzig.  
+**Fedora Package Maintainer** and **AI-ML SIG** member.  
+I build things with containers, AI/ML, and cloud technologies.
+"""
+
+    [[languages.en.menu.main]]
+      identifier = "home"
+      name = "Home"
+      url = "/"
+      weight = 10
+    
+    [[languages.en.menu.main]]
+      identifier = "about"
+      name = "About"
+      url = "/about/"
+      weight = 20
+    
+    [[languages.en.menu.main]]
+      identifier = "portfolio"
+      name = "Portfolio"
+      url = "/portfolio/"
+      weight = 30
+    
+    [[languages.en.menu.main]]
+      identifier = "blog"
+      name = "Blog"
+      url = "/blog/"
+      weight = 40
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 2
+    title = "Mohammadreza Hendiani"
+    
+    [languages.de.params]
+      description = "Masterstudent Informatik | KI/ML & Open-Source-Entwickler"
+      
+      [languages.de.params.homeInfoParams]
+        Title = "Hallo, ich bin Mohammadreza 👋"
+        Content = """
+Masterstudent der Informatik mit Schwerpunkt **Big Data & KI** an der SRH Universität Leipzig.  
+**Fedora-Paketbetreuer** und Mitglied der **AI-ML SIG**.  
+Ich entwickle Lösungen mit Containern, KI/ML und Cloud-Technologien.
+"""
+
+    [[languages.de.menu.main]]
+      identifier = "home"
+      name = "Startseite"
+      url = "/de/"
+      weight = 10
+    
+    [[languages.de.menu.main]]
+      identifier = "about"
+      name = "Über mich"
+      url = "/de/about/"
+      weight = 20
+    
+    [[languages.de.menu.main]]
+      identifier = "portfolio"
+      name = "Portfolio"
+      url = "/de/portfolio/"
+      weight = 30
+    
+    [[languages.de.menu.main]]
+      identifier = "blog"
+      name = "Blog"
+      url = "/de/blog/"
+      weight = 40
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Man2Dev"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/mohammadreza-hendiani"
+
+[[params.socialIcons]]
+  name = "email"
+  url = "mailto:mohammad.r.hendiani@gmail.com"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    style = "monokai"
